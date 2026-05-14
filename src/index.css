@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Inter:wght@300..700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-surface: #131313;
+  --color-surface-container: #1f2020;
+  --color-surface-container-low: #1b1c1c;
+  --color-surface-container-high: #2a2a2a;
+  --color-surface-container-highest: #353535;
+  --color-surface-bright: #393939;
+  --color-surface-lowest: #0e0e0e;
+  --color-surface-container-lowest: #0e0e0e;
+  --color-on-surface: #e4e2e1;
+  --color-on-surface-variant: #d0c6ab;
+  --color-primary: #fff6df;
+  --color-primary-container: #ffd700;
+  --color-on-primary-container: #705e00;
+  --color-primary-fixed-dim: #e9c400;
+  --color-outline: #999077;
+  --color-outline-variant: #4d4732;
+  
+  --font-headline: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@utility neomorphic-out {
+  box-shadow: 4px 4px 8px var(--color-surface-lowest), -1px -1px 4px var(--color-surface-bright);
+}
+
+@utility neomorphic-in {
+  box-shadow: inset 4px 4px 8px var(--color-surface-lowest), inset -1px -1px 4px var(--color-surface-bright);
+}
+
+@utility segmented-progress {
+  background-image: repeating-linear-gradient(90deg, transparent, transparent 8px, var(--color-surface) 8px, var(--color-surface) 10px);
+}
