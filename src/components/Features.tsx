@@ -1,4 +1,13 @@
 import { BookOpen, ShieldCheck, ClipboardCheck, GraduationCap } from "lucide-react";
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell } from 'recharts';
+
+const metricData = [
+  { subject: 'Precisión', score: 85, color: '#0284c7' },
+  { subject: 'Seguridad', score: 95, color: '#0369a1' },
+  { subject: 'Tiempo', score: 70, color: '#7dd3fc' },
+  { subject: 'Consumo', score: 80, color: '#bae6fd' },
+  { subject: 'Destreza', score: 90, color: '#0284c7' },
+];
 
 export default function Features() {
   return (
@@ -6,7 +15,7 @@ export default function Features() {
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
           <h2 className="font-headline text-5xl font-bold uppercase tracking-tight">ENFOQUE <span className="text-primary-container italic">EDUCATIVO</span></h2>
-          <p className="font-mono text-xs text-on-surface-variant font-bold max-w-xs text-right hidden sm:block">MÓDULO_DE_INSTRUCCIÓN: ENTRENAMIENTO_V1.0</p>
+          <p className="font-body text-xs text-on-surface-variant font-bold max-w-xs text-right hidden sm:block">MÓDULO_DE_INSTRUCCIÓN: ENTRENAMIENTO_V1.0</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
           {/* Inspired Fleet */}
@@ -25,14 +34,14 @@ export default function Features() {
           <div className="bg-surface-container-high p-8 neomorphic-out border-t-2 border-primary-container/20">
             <BookOpen className="text-primary-container w-8 h-8 mb-4" />
             <h3 className="font-headline text-xl font-bold mb-2">MÓDULOS DE LECCIONES</h3>
-            <p className="text-xs text-on-surface-variant font-mono uppercase tracking-tighter">Secuencias paso a paso guiadas para aprender tareas específicas.</p>
+            <p className="text-xs text-on-surface-variant font-body uppercase tracking-tighter">Secuencias paso a paso guiadas para aprender tareas específicas.</p>
           </div>
 
           {/* Interactive Cabs */}
           <div className="bg-surface-container-high p-8 neomorphic-out">
             <ShieldCheck className="text-primary-container w-8 h-8 mb-4" />
             <h3 className="font-headline text-xl font-bold mb-2">ENTORNO SEGURO</h3>
-            <p className="text-xs text-on-surface-variant font-mono uppercase tracking-tighter">Práctica de maniobras críticas de obra sin riesgo de accidentes reales.</p>
+            <p className="text-xs text-on-surface-variant font-body uppercase tracking-tighter">Práctica de maniobras críticas de obra sin riesgo de accidentes reales.</p>
           </div>
 
           {/* Atmospheric Cycle */}
@@ -42,13 +51,34 @@ export default function Features() {
               <h3 className="font-headline text-2xl font-bold mb-2 uppercase italic">EVALUACIÓN Y MÉTRICAS</h3>
               <p className="text-on-surface-variant text-sm">Registro continuo del operario con puntos de penalización para medir la destreza y asimilación de la normativa de obra.</p>
             </div>
-            <div className="w-full md:w-1/2 h-32 bg-surface-container-lowest neomorphic-in p-4 flex items-center justify-center">
-              <div className="w-full space-y-2">
-                <div className="flex justify-between font-mono text-[10px]"><span>PUNTUACIÓN DE EFICIENCIA</span><span>85%</span></div>
-                <div className="h-1 bg-surface-variant rounded-full overflow-hidden">
-                  <div className="h-full bg-primary-container w-[85%] segmented-progress"></div>
-                </div>
-              </div>
+            <div className="w-full md:w-1/2 h-72 md:h-80 bg-surface-container-lowest neomorphic-in p-4 flex items-center justify-center overflow-hidden rounded-xl">
+              <ResponsiveContainer width="100%" height="100%">
+                <BarChart data={metricData} margin={{ top: 20, right: 20, left: -20, bottom: 5 }}>
+                  <CartesianGrid strokeDasharray="3 3" stroke="var(--color-outline-variant)" vertical={false} />
+                  <XAxis 
+                    dataKey="subject" 
+                    angle={-90} 
+                    textAnchor="end" 
+                    height={70}
+                    tick={{ fill: 'var(--color-on-surface-variant)', fontSize: 11, fontFamily: 'var(--font-mono)' }} 
+                    axisLine={false} 
+                    tickLine={false} 
+                    dy={5}
+                    dx={-5}
+                  />
+                  <YAxis domain={[0, 100]} tick={{ fill: 'var(--color-on-surface-variant)', fontSize: 10, fontFamily: 'var(--font-mono)' }} axisLine={false} tickLine={false} />
+                  <Tooltip 
+                    cursor={{ fill: 'var(--color-surface)' }}
+                    contentStyle={{ backgroundColor: 'var(--color-surface)', borderColor: 'var(--color-outline-variant)', borderRadius: '8px', fontSize: '12px', boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)' }}
+                    itemStyle={{ color: 'var(--color-primary)', fontWeight: 'bold' }}
+                  />
+                  <Bar dataKey="score" radius={[4, 4, 0, 0]} maxBarSize={40}>
+                    {metricData.map((entry, index) => (
+                      <Cell key={`cell-${index}`} fill={entry.color} />
+                    ))}
+                  </Bar>
+                </BarChart>
+              </ResponsiveContainer>
             </div>
           </div>
         </div>
