@@ -4,9 +4,9 @@ export default function Hero() {
   return (
     <section id="inicio" className="relative h-[90vh] min-h-[600px] flex items-center overflow-hidden border-b-4 border-surface-container-high">
       <div className="absolute inset-0 z-0 bg-surface">
-        <img 
-          alt="Cinematic Simulation View" 
-          className="w-full h-full object-cover opacity-20 mix-blend-multiply" 
+        <img
+          alt="Cinematic Simulation View"
+          className="w-full h-full object-cover opacity-20 mix-blend-multiply"
           src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7hd-HTV4Xr9JECAm9FcbSVOiAEkMj9OMOSfCuDkHoyTmFUvMn_Zbvjl6llnRBDZQOHy6QpWIXuKxxPWOhpYlLAzh5CH9up6rflcJwnGQyWd-XiP3d0PZjXexg-5_V3tcyCJIWitoq2OLcfr6hpTC7vOchNHJM5NYQ2RO3jfEuwi4kKRjgaxIOdWZSRIShV98kJhjIh3-BZE-LYF6UIj0nQ8GZhItnR3DThPT_S8h2BwJsIsRA-5RZF3PoQrw0vDenQw0e88Etz1E"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-surface via-surface/80 to-transparent"></div>
@@ -45,7 +45,7 @@ export default function Hero() {
             </div>
             <div className="space-y-2">
               <div className="text-[10px] font-mono text-on-surface-variant font-bold uppercase tracking-widest drop-shadow-sm">TIEMPO DESARROLLO</div>
-              <div className="text-4xl font-headline font-bold text-on-surface drop-shadow-md">8 MESES</div>
+              <div className="text-4xl font-headline font-bold text-on-surface drop-shadow-md">3 MESES</div>
             </div>
           </div>
         </div>
