@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Github } from "lucide-react";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,9 +18,26 @@ export default function Navbar() {
           <a className="font-headline uppercase tracking-widest text-sm font-bold text-outline hover:text-primary-container transition-colors duration-300" href="#herramientas">HERRAMIENTAS</a>
         </nav>
         <div className="flex items-center gap-6">
-          <button className="hidden md:block bg-primary-container text-on-primary-container px-4 py-2 font-headline font-bold text-xs tracking-tighter uppercase shadow-[1px_1px_0px_var(--color-on-surface)] active:scale-95 duration-100 ease-in-out cursor-pointer hover:bg-primary transition-colors">
-            VER REPOSITORIO
-          </button>
+          <div className="hidden md:flex items-center gap-4">
+            <a 
+              href="https://github.com/ronaldquinoo/Landing-Page-Iron-Link" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-primary-container hover:text-primary transition-colors hover:scale-110 active:scale-95 duration-200"
+              aria-label="GitHub Repository"
+            >
+              <Github className="w-6 h-6" />
+            </a>
+            <a 
+              href="https://github.com/ronaldquinoo/Landing-Page-Iron-Link" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <button className="bg-primary-container text-on-primary-container px-4 py-2 font-headline font-bold text-xs tracking-tighter uppercase shadow-[1px_1px_0px_var(--color-on-surface)] active:scale-95 duration-100 ease-in-out cursor-pointer hover:bg-primary transition-colors">
+                VER REPOSITORIO
+              </button>
+            </a>
+          </div>
           <button className="md:hidden text-primary-container p-2" onClick={() => setIsMenuOpen(!isMenuOpen)}>
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -34,9 +51,28 @@ export default function Navbar() {
           <a className="font-headline uppercase tracking-widest text-lg font-bold text-on-surface-variant hover:text-primary-container transition-colors duration-300" href="#modulos" onClick={() => setIsMenuOpen(false)}>MÓDULOS</a>
           <a className="font-headline uppercase tracking-widest text-lg font-bold text-on-surface-variant hover:text-primary-container transition-colors duration-300" href="#hoja-de-ruta" onClick={() => setIsMenuOpen(false)}>HOJA DE RUTA</a>
           <a className="font-headline uppercase tracking-widest text-lg font-bold text-on-surface-variant hover:text-primary-container transition-colors duration-300" href="#herramientas" onClick={() => setIsMenuOpen(false)}>HERRAMIENTAS</a>
-          <button className="mt-8 bg-primary-container text-on-primary-container px-8 py-4 font-headline font-bold text-sm tracking-tighter uppercase shadow-[1px_1px_0px_var(--color-on-surface)] active:scale-95 duration-100 ease-in-out cursor-pointer hover:bg-primary transition-colors">
-            VER REPOSITORIO
-          </button>
+          <div className="mt-8 flex items-center gap-6">
+            <a 
+              href="https://github.com/ronaldquinoo/Landing-Page-Iron-Link" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-primary-container hover:text-primary transition-colors hover:scale-110 active:scale-95 duration-200"
+              aria-label="GitHub Repository"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              <Github className="w-8 h-8" />
+            </a>
+            <a 
+              href="https://github.com/ronaldquinoo/Landing-Page-Iron-Link" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              <button className="bg-primary-container text-on-primary-container px-8 py-4 font-headline font-bold text-sm tracking-tighter uppercase shadow-[1px_1px_0px_var(--color-on-surface)] active:scale-95 duration-100 ease-in-out cursor-pointer hover:bg-primary transition-colors">
+                VER REPOSITORIO
+              </button>
+            </a>
+          </div>
         </div>
       )}
     </>
