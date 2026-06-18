@@ -28,9 +28,6 @@ export default function Hero() {
               DESCARGAR DEMO
               <ArrowRight className="w-6 h-6" />
             </button>
-            <button className="border-2 border-outline-variant text-on-surface bg-surface-container-high px-8 py-4 font-headline font-bold text-xl tracking-widest uppercase hover:bg-surface-bright transition-colors cursor-pointer">
-              VER_CÓDIGO
-            </button>
           </div>
         </div>
         <div className="md:col-span-3 hidden md:flex flex-col justify-end border-l border-outline-variant/20 pl-8 pb-12">
