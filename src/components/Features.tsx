@@ -4,9 +4,9 @@ import featureImage from '../images/image_5.jpeg';
 
 const metricData = [
   { subject: 'Precisión', score: 85, color: '#0284c7' },
-  { subject: 'Seguridad', score: 95, color: '#0369a1' },
+  { subject: 'Orden', score: 95, color: '#0369a1' },
   { subject: 'Tiempo', score: 70, color: '#7dd3fc' },
-  { subject: 'Consumo', score: 80, color: '#bae6fd' },
+  { subject: 'Eficiencia', score: 80, color: '#bae6fd' },
   { subject: 'Destreza', score: 90, color: '#0284c7' },
 ];
 
@@ -16,20 +16,20 @@ export default function Features() {
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
           <h2 className="font-headline text-5xl font-bold uppercase tracking-tight">ENFOQUE <span className="text-primary-container italic">EDUCATIVO</span></h2>
-          <p className="font-body text-xs text-on-surface-variant font-bold max-w-xs text-right hidden sm:block">MÓDULO_DE_INSTRUCCIÓN: ENTRENAMIENTO_V1.0</p>
+          <p className="font-body text-xs text-on-surface-variant font-bold max-w-xs text-right hidden sm:block">MÓDULO_DE_ENSAMBLAJE: INDUSTRIAL_V1.0</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
           {/* Inspired Fleet */}
           <div className="md:col-span-2 md:row-span-2 bg-surface-container-high p-8 relative overflow-hidden group neomorphic-out">
             <div className="absolute inset-0 z-0">
-              <img src={featureImage} alt="Cabinas y Controles" className="w-full h-full object-cover opacity-20 mix-blend-luminosity group-hover:opacity-40 transition-opacity duration-700" />
+              <img src={featureImage} alt="Simulación Guiada" className="w-full h-full object-cover opacity-20 mix-blend-luminosity group-hover:opacity-40 transition-opacity duration-700" />
               <div className="absolute inset-0 bg-gradient-to-t from-surface-container-high via-surface-container-high/80 to-transparent"></div>
             </div>
             <div className="relative z-10 h-full flex flex-col justify-end min-h-[300px]">
               <div>
                 <GraduationCap className="text-primary-container w-10 h-10 mb-4" />
-                <h3 className="font-headline text-3xl font-bold mb-4">CABINAS Y CONTROLES</h3>
-                <p className="text-on-surface-variant leading-relaxed font-semibold">Orientado a la instrucción y memoria muscular de los mandos. Diseñamos la interfaz y el comportamiento de la maquinaría para que el estudiante aprenda y practique la secuencia correcta operativa sin riesgos.</p>
+                <h3 className="font-headline text-3xl font-bold mb-4">SIMULACIÓN GUIADA E INMERSIVA</h3>
+                <p className="text-on-surface-variant leading-relaxed font-semibold">El jugador entra a un espacio industrial, interactúa con una estación de entrenamiento y sigue una secuencia de pasos para completar el armado. Cada pieza tiene una posición correcta y el juego guía al usuario visualmente hasta completar el proceso.</p>
               </div>
             </div>
             <div className="absolute top-4 right-4 w-2 h-2 bg-primary-container animate-pulse rounded-full z-10"></div>
@@ -38,23 +38,23 @@ export default function Features() {
           {/* Basic Terrain */}
           <div className="bg-surface-container-high p-8 neomorphic-out border-t-2 border-primary-container/20">
             <BookOpen className="text-primary-container w-8 h-8 mb-4" />
-            <h3 className="font-headline text-xl font-bold mb-2">MÓDULOS DE LECCIONES</h3>
-            <p className="text-xs text-on-surface-variant font-body uppercase tracking-tighter">Secuencias paso a paso guiadas para aprender tareas específicas.</p>
+            <h3 className="font-headline text-xl font-bold mb-2">APRENDER ENSAMBLANDO</h3>
+            <p className="text-xs text-on-surface-variant font-body uppercase tracking-tighter">Una simulación interactiva donde el jugador participa directamente en el armado, transformando una tarea técnica en algo práctico y visual.</p>
           </div>
 
           {/* Interactive Cabs */}
           <div className="bg-surface-container-high p-8 neomorphic-out">
             <ShieldCheck className="text-primary-container w-8 h-8 mb-4" />
-            <h3 className="font-headline text-xl font-bold mb-2">ENTORNO SEGURO</h3>
-            <p className="text-xs text-on-surface-variant font-body uppercase tracking-tighter">Práctica de maniobras críticas de obra sin riesgo de accidentes reales.</p>
+            <h3 className="font-headline text-xl font-bold mb-2">DE EXPLORADOR A OPERADOR</h3>
+            <p className="text-xs text-on-surface-variant font-body uppercase tracking-tighter">El juego inicia en primera persona en una planta industrial y pasa a un modo de ensamblaje enfocado en las piezas y el armado.</p>
           </div>
 
           {/* Atmospheric Cycle */}
           <div className="md:col-span-2 bg-surface-container-high p-8 flex flex-col md:flex-row gap-8 items-center neomorphic-out border-r-2 border-primary-container/20">
             <div className="flex-1">
               <ClipboardCheck className="text-primary-container w-8 h-8 mb-4" />
-              <h3 className="font-headline text-2xl font-bold mb-2 uppercase italic">EVALUACIÓN Y MÉTRICAS</h3>
-              <p className="text-on-surface-variant text-sm">Registro continuo del operario con puntos de penalización para medir la destreza y asimilación de la normativa de obra.</p>
+              <h3 className="font-headline text-2xl font-bold mb-2 uppercase italic">VALOR DIFERENCIAL</h3>
+              <p className="text-on-surface-variant text-sm">Más que un juego: una herramienta de entrenamiento. Iron Link sirve para capacitación técnica, permitiendo errores sin consecuencias, repetir pasos y mejorar el tiempo de ejecución.</p>
             </div>
             <div className="w-full md:w-1/2 h-72 md:h-80 bg-surface-container-lowest neomorphic-in p-4 flex items-center justify-center overflow-hidden rounded-xl">
               <ResponsiveContainer width="100%" height="100%">

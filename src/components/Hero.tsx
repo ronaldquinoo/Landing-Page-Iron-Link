@@ -16,13 +16,13 @@ export default function Hero() {
         <div className="md:col-span-7 space-y-6">
           <div className="flex items-center gap-4 text-primary-container">
             <span className="h-px w-12 bg-primary-container"></span>
-            <span className="font-mono text-xs tracking-[0.3em] uppercase">SIMULADOR_EDUCATIVO // UNITY_V2022</span>
+            <span className="font-mono text-xs tracking-[0.3em] uppercase">MACHINE_SIMULATOR // UNITY_V2022</span>
           </div>
           <h1 className="font-headline text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter leading-none italic">
             IRON <span className="text-primary-container">LINK</span>
           </h1>
           <p className="max-w-2xl text-lg text-on-surface-variant font-light leading-relaxed">
-            Un simulador interactivo enfocado en el aprendizaje y la instrucción de maquinaria pesada. Proyecto estudiantil diseñado en Unity para enseñar operación de vehículos y protocolos de seguridad en construcción.
+            Una experiencia interactiva donde el jugador aprende a ensamblar una máquina paso a paso dentro de un entorno industrial 3D.
           </p>
           <div className="flex flex-wrap gap-4 pt-4">
             <button className="bg-primary-container text-on-primary-container px-8 py-4 font-headline font-black text-xl tracking-widest uppercase neomorphic-out flex items-center gap-3 active:scale-95 transition-transform cursor-pointer">

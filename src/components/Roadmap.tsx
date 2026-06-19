@@ -44,22 +44,22 @@ export default function Roadmap() {
             <div className="relative">
               <div className="absolute -left-10 top-0 w-5 h-5 bg-primary-container rounded-full border-4 border-surface outline outline-2 outline-primary-container"></div>
               <div className="font-mono text-primary-container font-bold mb-2">FASE 01 (COMPLETADA)</div>
-              <h4 className="font-headline text-xl font-bold uppercase">MÓDULO DE FAMLIRIZACIÓN</h4>
-              <p className="text-on-surface-variant text-sm mt-2">Implementación de controles de conducción base y reconocimiento guiado de los paneles de operación en cabina.</p>
+              <h4 className="font-headline text-xl font-bold uppercase">MÓDULO DE INTERACCIÓN</h4>
+              <p className="text-on-surface-variant text-sm mt-2">Implementación de la mecánica de interacción con piezas y reconocimiento de componentes en la estación de trabajo.</p>
             </div>
             
             <div className="relative">
               <div className="absolute -left-10 top-0 w-5 h-5 bg-surface-container-high rounded-full border-4 border-surface"></div>
               <div className="font-mono text-on-surface-variant font-bold mb-2">FASE 02 (EN PROGRESO)</div>
-              <h4 className="font-headline text-xl font-bold uppercase">MÓDULOS DE OBRA</h4>
-              <p className="text-on-surface-variant text-sm mt-2">Creación de lecciones guiadas de traslado, carga de camiones volquete y nivelación de terrenos estructurados.</p>
+              <h4 className="font-headline text-xl font-bold uppercase">SISTEMA DE GUÍA Y PASOS</h4>
+              <p className="text-on-surface-variant text-sm mt-2">Creación de lecciones guiadas utilizando piezas fantasma, animaciones e instrucciones visuales para facilitar el armado.</p>
             </div>
             
             <div className="relative opacity-70">
               <div className="absolute -left-10 top-0 w-5 h-5 bg-surface-container-high rounded-full border-4 border-surface"></div>
               <div className="font-mono text-on-surface-variant font-bold mb-2">FASE 03 (PLANIFICADA)</div>
-              <h4 className="font-headline text-xl font-bold uppercase">SISTEMA DE EVALUACIÓN</h4>
-              <p className="text-on-surface-variant text-sm mt-2">Integración de un sistema de métricas que penaliza faltas de seguridad y evalúa objetivamente la destreza del aprendiz.</p>
+              <h4 className="font-headline text-xl font-bold uppercase">MÉTRICAS Y CRONÓMETRO</h4>
+              <p className="text-on-surface-variant text-sm mt-2">Integración del sistema de métricas para registrar la precisión del armado y medir el tiempo utilizado en cada paso.</p>
             </div>
           </div>
         </div>

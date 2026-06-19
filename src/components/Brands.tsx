@@ -17,10 +17,10 @@ export default function Brands() {
             <span className="font-headline font-black text-xl lg:text-2xl text-primary-container transition-colors">GITHUB</span>
           </div>
           <div className="h-32 bg-surface-container-high flex items-center justify-center neomorphic-out grayscale hover:grayscale-0 transition-all hover:-translate-y-1">
-            <span className="font-headline font-black text-xl lg:text-2xl text-center text-primary-container transition-colors">VISUAL<br/>STUDIO</span>
+            <span className="font-headline font-black text-xl lg:text-2xl text-center text-primary-container transition-colors">VISUAL<br />STUDIO</span>
           </div>
           <div className="h-32 bg-surface-container-high flex items-center justify-center neomorphic-out grayscale hover:grayscale-0 transition-all hover:-translate-y-1">
-            <span className="font-headline font-black text-xl lg:text-2xl text-primary-container transition-colors">SUBSTANCE</span>
+            <span className="font-headline font-black text-xl lg:text-2xl text-primary-container transition-colors">CODEX</span>
           </div>
         </div>
       </div>

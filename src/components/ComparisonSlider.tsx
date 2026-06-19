@@ -20,11 +20,11 @@ export default function ComparisonSlider() {
     <section id="aprendizaje" className="py-24 bg-surface-container-lowest border-y-4 border-surface-container-high overflow-hidden">
       <div className="container mx-auto px-8 flex flex-col md:flex-row gap-16 items-center">
         <div className="w-full md:w-1/3 space-y-6">
-          <div className="inline-block px-3 py-1 bg-primary-container text-on-primary-container text-[10px] font-bold font-mono uppercase">Puente Metodológico</div>
-          <h2 className="font-headline text-4xl font-bold tracking-tight">APRENDIZAJE<br/><span className="text-primary-container">SIN RIESGOS</span></h2>
-          <p className="text-on-surface-variant leading-relaxed">El simulador permite a los estudiantes comprender las dinámicas de obra, carga y el espacio perimetral en un entorno virtual tolerante a fallos, mucho antes de manipular maquinaria real.</p>
+          <div className="inline-block px-3 py-1 bg-primary-container text-on-primary-container text-[10px] font-bold font-mono uppercase">PROBLEMA QUE RESUELVE</div>
+          <h2 className="font-headline text-4xl font-bold tracking-tight">EL ENTRENAMIENTO<br/><span className="text-primary-container">TRADICIONAL PUEDE SER LIMITADO</span></h2>
+          <p className="text-on-surface-variant leading-relaxed">Muchas veces aprender a ensamblar una máquina depende de manuales, videos o explicaciones largas. Eso puede hacer que el proceso sea lento, poco intuitivo o difícil de recordar. Iron Link propone una alternativa más clara: practicar en un entorno seguro antes de hacerlo en la vida real.</p>
           <div className="p-4 bg-surface-container-high border-l-4 border-primary-container italic font-mono text-sm">
-            "Ideal para automatizar la memoria muscular y aprender los protocolos en un entorno controlado." - Asesor de Ingeniería
+            "El objetivo principal es ensamblar todas las piezas de la máquina en el orden correcto, recibiendo retroalimentación del tiempo utilizado." - Objetivo del Juego
           </div>
         </div>
         
@@ -42,7 +42,7 @@ export default function ComparisonSlider() {
               className="w-full h-full object-cover pointer-events-none" 
               src={baseImage}
             />
-            <div className="absolute bottom-4 right-4 bg-surface/90 px-4 py-1 font-mono text-xs text-on-surface font-bold pointer-events-none">ZONA_DE_MANIOBRA</div>
+            <div className="absolute bottom-4 right-4 bg-surface/90 px-4 py-1 font-mono text-xs text-on-surface font-bold pointer-events-none">ESCENA_3D_INTERACTIVA</div>
           </div>
           
           {/* Imagen Superpuesta (Recortada por sliderPos) */}
@@ -56,7 +56,7 @@ export default function ComparisonSlider() {
               className="absolute inset-0 w-full h-full object-cover pointer-events-none" 
               src={overlayImage} 
             />
-            <div className="absolute bottom-4 left-4 bg-primary-container px-4 py-1 font-mono text-xs text-on-primary-container font-bold pointer-events-none">ZONA_DE_EXCAVACIÓN</div>
+            <div className="absolute bottom-4 left-4 bg-primary-container px-4 py-1 font-mono text-xs text-on-primary-container font-bold pointer-events-none">MANUAL_DE_INSTRUCCIONES</div>
           </div>
 
           {/* Línea divisoria */}
