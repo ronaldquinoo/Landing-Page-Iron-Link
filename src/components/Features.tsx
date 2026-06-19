@@ -1,5 +1,6 @@
 import { BookOpen, ShieldCheck, ClipboardCheck, GraduationCap } from "lucide-react";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell } from 'recharts';
+import featureImage from '../images/image_5.jpeg';
 
 const metricData = [
   { subject: 'Precisión', score: 85, color: '#0284c7' },
@@ -20,14 +21,18 @@ export default function Features() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
           {/* Inspired Fleet */}
           <div className="md:col-span-2 md:row-span-2 bg-surface-container-high p-8 relative overflow-hidden group neomorphic-out">
-            <div className="relative z-10 h-full flex flex-col justify-between min-h-[300px]">
+            <div className="absolute inset-0 z-0">
+              <img src={featureImage} alt="Cabinas y Controles" className="w-full h-full object-cover opacity-20 mix-blend-luminosity group-hover:opacity-40 transition-opacity duration-700" />
+              <div className="absolute inset-0 bg-gradient-to-t from-surface-container-high via-surface-container-high/80 to-transparent"></div>
+            </div>
+            <div className="relative z-10 h-full flex flex-col justify-end min-h-[300px]">
               <div>
                 <GraduationCap className="text-primary-container w-10 h-10 mb-4" />
                 <h3 className="font-headline text-3xl font-bold mb-4">CABINAS Y CONTROLES</h3>
-                <p className="text-on-surface-variant leading-relaxed">Orientado a la instrucción y memoria muscular de los mandos. Diseñamos la interfaz y el comportamiento de la maquinaría para que el estudiante aprenda y practique la secuencia correcta operativa sin riesgos.</p>
+                <p className="text-on-surface-variant leading-relaxed font-semibold">Orientado a la instrucción y memoria muscular de los mandos. Diseñamos la interfaz y el comportamiento de la maquinaría para que el estudiante aprenda y practique la secuencia correcta operativa sin riesgos.</p>
               </div>
             </div>
-            <div className="absolute top-4 right-4 w-2 h-2 bg-primary-container animate-pulse rounded-full"></div>
+            <div className="absolute top-4 right-4 w-2 h-2 bg-primary-container animate-pulse rounded-full z-10"></div>
           </div>
 
           {/* Basic Terrain */}

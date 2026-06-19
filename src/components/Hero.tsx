@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import heroImage from '../images/image_1.jpeg';
 
 export default function Hero() {
   return (
@@ -7,7 +8,7 @@ export default function Hero() {
         <img
           alt="Cinematic Simulation View"
           className="w-full h-full object-cover opacity-20 mix-blend-multiply"
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7hd-HTV4Xr9JECAm9FcbSVOiAEkMj9OMOSfCuDkHoyTmFUvMn_Zbvjl6llnRBDZQOHy6QpWIXuKxxPWOhpYlLAzh5CH9up6rflcJwnGQyWd-XiP3d0PZjXexg-5_V3tcyCJIWitoq2OLcfr6hpTC7vOchNHJM5NYQ2RO3jfEuwi4kKRjgaxIOdWZSRIShV98kJhjIh3-BZE-LYF6UIj0nQ8GZhItnR3DThPT_S8h2BwJsIsRA-5RZF3PoQrw0vDenQw0e88Etz1E"
+          src={heroImage}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-surface via-surface/80 to-transparent"></div>
       </div>

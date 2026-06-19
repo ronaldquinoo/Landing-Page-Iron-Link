@@ -1,5 +1,7 @@
 import { useState, useRef, MouseEvent as ReactMouseEvent, TouchEvent as ReactTouchEvent } from "react";
 import { ChevronsLeftRight } from "lucide-react";
+import baseImage from '../images/image_2.jpeg';
+import overlayImage from '../images/image_7.jpeg';
 
 export default function ComparisonSlider() {
   const [sliderPos, setSliderPos] = useState(50);
@@ -38,7 +40,7 @@ export default function ComparisonSlider() {
               loading="lazy"
               alt="Standard Mesh View" 
               className="w-full h-full object-cover pointer-events-none" 
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCafWzq8vtbJNZ3s7FauINKNmA2bC4SKds0KSVjKXpsVzeG3ZObRsFabgIeuMPqlqXSHWOfENuSEiGHRzvmx5xUCljoyfZO6rsQVj9HWQfODbu1pdCwcnmdoAi2dHqaHZ_eCm4P88gRP7SmyPeg042eSK6LEyXtC6V2RjZIo2S2ba7wkPlf5n3NkatdIQCaCbOaU9POKmOFySlP3CQG7fjyBwiLC22qbTnDpxr1vihAFF9xEpW_s9mbny_CQvXxJlcWgP0ymma8egI"
+              src={baseImage}
             />
             <div className="absolute bottom-4 right-4 bg-surface/90 px-4 py-1 font-mono text-xs text-on-surface font-bold pointer-events-none">ZONA_DE_MANIOBRA</div>
           </div>
@@ -52,7 +54,7 @@ export default function ComparisonSlider() {
               loading="lazy"
               alt="Dynamic Terrain View" 
               className="absolute inset-0 w-full h-full object-cover pointer-events-none" 
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvXzXjizOYkxOOgRHc7QYFYsHgcgaFyICAuqdDG6aqCqqxJU78KWXyLoPH1k1CGvU5iKonVOKdBTSROLAnOJgoWLLzjbXW3RNskwYmgSkkhQ30IHQqezrpP4QiHl3wYkWLCG2AMQQe7qNlwt10oXotJdnOizGWpmcHSUZTZj8tYXqauCanKJ4v0KrRhuYyiNWqCygPntuDxdOs6hsx0lp-t-oYAHqN5LAbnJqWFynfZGJ_K0R1VxUqrlZr8we-bQFJ3HnsmvpTC_Q" 
+              src={overlayImage} 
             />
             <div className="absolute bottom-4 left-4 bg-primary-container px-4 py-1 font-mono text-xs text-on-primary-container font-bold pointer-events-none">ZONA_DE_EXCAVACIÓN</div>
           </div>

@@ -1,4 +1,5 @@
 import { Box, Settings, ChevronRight } from "lucide-react";
+import moduleImage from '../images/image_6.jpeg';
 
 export default function Modules() {
   return (
@@ -18,7 +19,7 @@ export default function Modules() {
               loading="lazy"
               alt="PBR Asset Detail" 
               className="w-full h-full object-cover opacity-80 mix-blend-multiply group-hover:scale-105 transition-transform duration-700" 
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYQ9P2UMgKWACdmklQOOYqvjoCr6nY2hQEwJCrJXnlXQ3gN2uGrsKFh0JsPcdkrXB6S3kHA3eccNBopqXcvypJ3nljPm_14iBuPtfxc3_x_H-1qzFgwJl-kGiejuKx46WuxormSJEFgS9O8-aGOjCwJrIrh4cBT3i0gfjdFRbiHuj83XPIxsuQnBtRSQS05DAwFqaLcP0bpf6VKNWMhSuhaRvaGS9kYQLjanYOloTkSJLCPYi7E9mTjktd_2TSVxqpcD2Q3J9eWFs"
+              src={moduleImage}
             />
             <div className="absolute top-4 left-4 flex gap-2">
               <div className="px-2 py-1 bg-primary-container text-on-primary-container text-[10px] font-bold shadow-md">PIEZA</div>
